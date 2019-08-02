@@ -1,0 +1,113 @@
+/*mada font*/
+@import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
+
+/*remove outline from focused inputs*/
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none;
+}
+
+body{
+  font-family: 'Arial';
+}
+
+/*landing section*/
+#landing-section{
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.header .logo{
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.header .logo span{
+  color: #28b45d;
+  font-weight: 600;
+}
+/*hero*/
+.hero-left h1{
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  color: #5a5959;
+  font-weight: 600;
+  line-height: 1;
+}
+.hero-left h1 a{
+  color: #28b45d;
+  text-decoration: none;
+}
+.custom-input{
+  background-color: #3c3c3c;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #adadad;
+}
+.custom-input:focus{
+  background-color: #3c3c3c;
+  outline: none;
+  color: #adadad;
+}
+.custom-span{
+  background-color: #3c3c3c;
+  border: none;
+  color: #adadad;
+}
+.custom-btn{
+  background-color: #28b45d;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+}
+.custom-btn:hover{
+  color: #fff;
+  background-color: #20914b;
+}
+
+.placeholder-center::placeholder{
+  text-align: center;
+}
+.form-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b4b5b4;
+}
+.form-title h3{
+  text-transform: uppercase;
+}
+.custom-flex{
+  display: flex;
+  align-items: center;
+}
+.custom-label{
+  color: #c9c9c9;
+}
+.custom-label a{
+  color: #28b45d;
+}
+.security-info{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  color: #9d9d9d;
+}
+.security-info a{
+  color: #28b45d;
+}
