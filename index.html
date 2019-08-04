@@ -24,16 +24,16 @@
       </div>
       <!--END OF HEADER-->
       <div class="row custom-flex">
-        <div class="hero-left col-sm">
-          <h1>Click<br> <a href = "#">here</a> to<br> find out<br> more</h1>
+        <div class="hero-left col-md-6 col-12">
+          <h1>Click<br> <a id = "scroll-link" href = "#">here</a> to<br> find out<br> more</h1>
         </div>
-        <div class="hero-right col-sm">
+        <div class="hero-right col-md-6 col-12">
           <!--FORM-->
-          <form class = "px-5">
+          <form>
             <div class="form-title mb-4">
               <h3>Join Us</h3>
               <div class="pagination">
-                1|2
+                <a id = "first-step-number" href="#">1</a><a id = "second-step-number" href="#">2</a>
               </div>
             </div>
             <div class="form-row">
@@ -71,7 +71,7 @@
                   aria-describedby="addon-wrapping">
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" id = "privacy">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label custom-label" for="gridCheck">
@@ -79,7 +79,22 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-block custom-btn mt-4">Go To Next Step</button>
+            <div class="form-group m-0"  id = "second-step">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn dropdown-toggle dropdown-custom" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"><img class = "mr-2" src="./images/flag.png"/><span>+381</span></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">+386</a>
+                    <a class="dropdown-item" href="#">+384</a>
+                    <a class="dropdown-item" href="#">+388</a>
+                  </div>
+                </div>
+                <input type="tel" class="form-control custom-input" placeholder="Phone" aria-label="Text input with dropdown button">
+              </div>
+            </div>
+            <button id = "first-step-button" type="submit" class="btn btn-block custom-btn mt-4">Go To Next Step</button>
+            <button id = "second-step-button" type="submit" class="btn btn-block custom-btn mt-4">Get Started Now</button>
             <div class="security-info mt-3">
               <p class = "mb-1"><span><i class="fas fa-lock"></i></span> Your data is always protected with us. You can change your mind anytime by...</p>
               <a href="#">more</a>
@@ -98,7 +113,7 @@
       <p class = "text-center mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
       aliqua.</p>
       <div class="cards row">
-        <div class="box col-sm m-4 text-center">
+        <div class="box col-md-4 text-center">
           <div class="box-number">
             <h4>1</h4>
           </div>
@@ -111,7 +126,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           </div>
         </div>
-        <div class="box col-sm m-4 text-center">
+        <div class="box col-md-4 text-center">
           <div class="box-number">
             <h4>2</h4>
           </div>
@@ -124,7 +139,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           </div>
         </div>
-        <div class="box col-sm m-4 text-center">
+        <div class="box col-md-4 text-center">
           <div class="box-number">
             <h4>3</h4>
           </div>
@@ -257,6 +272,48 @@
     </div>
   </div>
   <!--END OF FAQ SECTION-->
+  <!--FOOTER-->
+  <div id="footer">
+    <div class="container">
+      <h3 class="text-center mb-4"><span>Top</span>Stocks</h3>
+      <p class="text-center mb-4">
+        <strong>Important Risk Note:</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat
+        t non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+        natus
+        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+        quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequunt r magni
+        voluptatem sequi nesciunt.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+        velit.
+      </p>
+      <div class="footer-nav">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Risk Disclaimer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Website Agreement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Report Abuse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--END OF FOOTER-->
+
   <!--JQUERY, POPPER-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

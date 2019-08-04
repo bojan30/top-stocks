@@ -4,16 +4,14 @@
 /*remove outline from focused inputs*/
 input.form-control:focus, 
 input[type=text]:focus, 
-input[type=password]:focus, 
 input[type=email]:focus, 
-input[type=number]:focus, 
-[type=text].form-control:focus, 
-[type=password].form-control:focus, 
+[type=text].form-control:focus,  
 [type=email].form-control:focus, 
 [type=tel].form-control:focus, 
 [contenteditable].form-control:focus {
   box-shadow: none;
 }
+
 html{
   font-size: 1rem;
 }
@@ -26,6 +24,8 @@ body{
   background-image: url('../images/background.jpg');
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
   padding: 2rem 0;
 }
@@ -52,6 +52,37 @@ body{
 .hero-left h1 a{
   color: #28b45d;
   text-decoration: none;
+}
+/*hero right*/
+.form-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b4b5b4;
+}
+.form-title h3{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.pagination span{
+  font-size: 1.5rem;
+}
+.pagination a{
+  color: #adadad;
+  text-decoration: none;
+  padding: 0 0.8rem;
+  font-size: 1.5rem;
+}
+.pagination a.active{
+  color: #28b45d;
+}
+.pagination a:first-child{
+  border-right: 2px solid #adadad;
 }
 .custom-input{
   background-color: #3c3c3c;
@@ -83,18 +114,32 @@ body{
   color: #fff;
   background-color: #20914b;
 }
-
+.dropdown-custom{
+  background-color: #3c3c3c;
+  color: #adadad;
+  outline: none;
+  box-shadow: none;
+  position: relative;
+}
+.dropdown-custom:hover{
+  outline: none;
+  box-shadow: none;
+  color: #adadad;
+}
+#second-step{
+  display: none;
+}
+#second-step.active{
+  display: flex;
+}
+#second-step-button{
+  display: none;
+}
+#second-step-button.active{
+  display: inline-block;
+}
 .placeholder-center::placeholder{
   text-align: center;
-}
-.form-title{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #b4b5b4;
-}
-.form-title h3{
-  text-transform: uppercase;
 }
 .custom-flex{
   display: flex;
@@ -265,4 +310,84 @@ body{
 }
 .answer-text p{
   font-size: 0.9rem;
+}
+
+/*footer*/
+
+#footer{
+  background-color: #1f1f1f;
+  padding: 1.5rem 0;
+  color: #b7b7b7;
+}
+#footer h3{
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+#footer h3 span{
+  color: #28b45d;
+  font-weight: 600;
+}
+#footer p {
+  font-size: 0.8rem;
+}
+.custom-link{
+  position: relative;
+  color: #b7b7b7;
+}
+.custom-link:hover{
+  color: #fff;
+}
+.custom-link::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  background-color: #b7b7b7;
+}
+.footer-nav li:first-child a:before{
+  display: none;
+}
+
+/*media*/
+
+@media (max-width: 992px){
+  .hero-left h1{
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px){
+  .hero-left{
+    margin-bottom: 2rem;
+  }
+  .hero-left h1{
+    font-size: 3rem;
+  }
+  .box{
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 80%;
+  }
+  .box:last-child{
+    margin-bottom: 0;
+  }
+  #steps-section h3{
+    font-size: 1.5rem;
+  }
+  #faq h3{
+    font-size: 1.5rem;
+  }
+  .questions{
+    padding: 0;
+  }
+  .question-text span{
+    font-size: 1rem;
+  }
+  .toggle-custom{
+    width: 25px;
+    height: 25px;
+  }
 }
