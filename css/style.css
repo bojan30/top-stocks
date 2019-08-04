@@ -374,10 +374,7 @@ body{
   .box:last-child{
     margin-bottom: 0;
   }
-  #steps-section h3{
-    font-size: 1.5rem;
-  }
-  #faq h3{
+  #steps-section h3, #faq h3, #footer h3{
     font-size: 1.5rem;
   }
   .questions{
