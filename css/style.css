@@ -21,13 +21,13 @@ body{
 
 /*landing section*/
 #landing-section{
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/background-landing.jpg');
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .header .logo{

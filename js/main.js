@@ -8,17 +8,6 @@ const secondStepNumber = document.querySelector('#second-step-number');
 const toggleButtons = document.querySelectorAll('.toggle-custom');
 const scrollLink = document.querySelector('#scroll-link');
 
-//parallax effect(landing section)
-
-function parallax(target, amount) {
-  let scroll = window.pageYOffset;
-  let el = document.querySelector(target);
-  el.style.backgroundPositionY = (amount - 1) * scroll + "px";
-}
-window.addEventListener('scroll',()=>{
-  parallax('#landing-section', 0.7);
-});
-
 //form steps
 
 buttonOne.addEventListener('click', stepOne);
